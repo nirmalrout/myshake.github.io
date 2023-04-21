@@ -805,6 +805,10 @@
 			      key: "AIzaSyBe1evkMoKdm7MdIBWa-qcy4OS4JkWmDUs"
 			    },
 			    success: function(response) {
+                    var translateElement = document.getElementById('google_translate_element');
+			    	if (translateElement) {
+			    	   translateElement.parentNode.removeChild(translateElement);
+			    	}
 			      $("body").html(response.data.translations[0].translatedText);
                   window.removeEventListener('shake',     shakeEventDidOccur, false);
       myShakeEvent.stop();
