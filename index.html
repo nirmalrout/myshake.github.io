@@ -1,0 +1,820 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="./furni.css">
+    <title>Hello, world!</title>
+  </head>
+  <body>
+    <header class="header" id="Header">
+        <nav class="navbar">
+            <div class="logoContainer">
+                <a href="/" class="logo">
+                    <img src="./image/logo.png" alt="" class="logoImg">
+                </a>
+            </div>
+            <div class="nav-menu">
+                <div class="navList">
+                    <ul class="catergories">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#products">Products</a></li>
+                        <li><a href="#feedback">Feedback</a></li>
+                    </ul>
+                </div>
+                <div class="searchBox">
+                    <form class="form-inline my-2 my-lg-0">
+                        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                        <i class="fa fa-search" aria-hidden="true"></i>
+                    </form>
+                </div>
+            </div>
+            <div class="toggleBtn close" id="navList">
+                <div class="iconDiv" id="iconDiv">
+                    <div class="iconDivInner"></div>
+                </div>
+                <div class="navList">
+                    <ul class="catergories">
+                        <li onclick="toggle()"><a href="#home">Home</a></li>
+                        <li onclick="toggle()"><a href="#about">About</a></li>
+                        <li onclick="toggle()"><a href="#products">Products</a></li>
+                        <li onclick="toggle()"><a href="#feedback">Feedback</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <section class="bannerSection" id="home">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-12 col-lg-12 px-0">
+                    <div id="hero-slider">
+                        <div id="slideshow">
+                            <div id="slides-main" class="slides">
+                                <div class="slide" data-index="0">
+                                    <div class="abs-mask">
+                                        <div class="slide-image" style="background-image: url(./image/bannerfurn1.jpeg)"></div>
+                                    </div>
+                                </div>
+                                <div class="slide" data-index="1">
+                                    <div class="abs-mask">
+                                        <div class="slide-image" style="background-image: url(./image/bannerfurn2.jpeg)"></div>
+                                    </div>
+                                </div>
+                                <div class="slide" data-index="2">
+                                    <div class="abs-mask">
+                                        <div class="slide-image" style="background-image: url(./image/bannerfurn3.jpeg)"></div>
+                                    </div>
+                                </div>
+                                <div class="slide" data-index="3">
+                                    <div class="abs-mask">
+                                        <div class="slide-image" style="background-image: url(./image/bannerfurn4.jpeg)"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="slides-aux" class="slides mask d-none">
+                                <h2 class="slide-title slide" data-index="0"><a href="#">#64 Paradigm</a></h2>
+                                <h2 class="slide-title slide" data-index="1"><a href="#">Industrial Works</a></h2>
+                                <h2 class="slide-title slide" data-index="2"><a href="#">Future Lights</a></h2>
+                                <h2 class="slide-title slide" data-index="3"><a href="#">The Colossal</a></h2>
+                            </div>
+                        </div>
+                        <div id="info">
+                            <div class="nextPrevBox">
+                                <a class="prev changeBtn" onclick="previousSlide()">❮</a>
+                                <a class="prev changeBtn" onclick="nextSlide()">❯</a>
+                            </div>
+                        </div>
+                        <div id="slider-nav">
+                            <span class="current">01</span>
+                            <span class="sep"></span>
+                            <span class="total">04</span>
+                        </div>
+                    </div>
+                    <div class="contentPart">
+                        <h4>We Help You Make Mordern Interior</h4>
+                        <p>We will help you to make an elegant
+                            and luxurious interior designed by
+                            professional interior designer.</p>
+                    </div>
+                    <div class="dotBox"></div>
+                    <div class="scrollBottomBtn" onclick="scrollBottom()"><i class="fa-solid fa-arrow-down"></i></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="sponsorSection">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-12 col-lg-12">
+                    <h4>TRUSTED BY OVER 1K+ COMPANIES</h4>
+                    <div class="sponsorlogoContainer">
+                        <div class="logo"><img src="image/sponsor1.jpeg"/></div>
+                        <div class="logo"><img src="image/sponsor5.jpeg"/></div>
+                        <div class="logo"><img src="image/sponsor2.jpeg"/></div>
+                        <div class="logo"><img src="image/sponsor3.jpeg"/></div>
+                        <div class="logo"><img src="image/sponsor4.jpeg"/></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="dealSection">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-12 col-lg-12">
+                    <div class="row">
+                        <div class="col-md-4 col-sm-12 left">
+                            <h3>Hot <img src="image/fire.jpeg" class="img-fluid"/><br>deals for you</h3>
+                            <p>Online shopping for retail sales <br>direct to consumers</p>
+                        </div>
+                        <div class="col-md-8 col-sm-12 right">
+                            <div class="dealsContent">
+                                <img src="image/sqrcircle.jpeg" class="img-fluid"/>
+                                <h6>1.5% cashback</h6>
+                                <p>Online shopping for retail sales direct to consumers</p>
+                            </div>
+                            <div class="dealsContent">
+                                <img src="image/sqrcircle.jpeg" class="img-fluid"/>
+                                <h6>1.5% cashback</h6>
+                                <p>Online shopping for retail sales direct to consumers</p>
+                            </div>
+                            <div class="dealsContent">
+                                <img src="image/sqrcircle.jpeg" class="img-fluid"/>
+                                <h6>1.5% cashback</h6>
+                                <p>Online shopping for retail sales direct to consumers</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="aboutUsSection" id="about">
+        <div class="container-fluid px-0">
+            <div class="row">
+                <div class="col-md-12 col-lg-12">
+                    <div class="row">
+                        <div class="col-md-5">
+                            <h3 class="heading">About Us</h3>
+                            <p>At Besnik Consultancy, we take pride in our values – service, integrity, and excellence.</p>
+                        </div>
+                        <div class="col-md-3 offset-md-4 btnDiv">
+                            <button type="button" class="btn btn-primary learnMoreBtn">Learn More</button>
+                        </div>
+                    </div>
+                    <div class="row pt-3">
+                        <div class="col-lg-6">
+                            <div class="row">
+                                <div class="col-md-6 col-sm-12 content">
+                                    <h1>1.</h1>
+                                    <h2>Who We Are</h2>
+                                    <p>You get a 2-week free trial to kick the Smarty tries. We want you to.</p>
+                                </div>
+                                <div class="col-md-6 col-sm-12 content">
+                                    <h1>2.</h1>
+                                    <h2>What Do We Do</h2>
+                                    <p>We give you a free course that guides you through the process.</p>
+                                </div>
+                                <div class="col-md-6 col-sm-12 content">
+                                    <h1>3.</h1>
+                                    <h2>How Do We Help</h2>
+                                    <p>Use our multimedia lecturers, videos, and coaching sessions.</p>
+                                </div>
+                                <div class="col-md-6 col-sm-12 content">
+                                    <h1>4.</h1>
+                                    <h2>Create Success Story</h2>
+                                    <p>With access to online learning resources anyone can transfrm.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 imgDiv">
+                            <img src="image/about1.jpeg" class="img-fluid img1" />
+                            <img src="image/about2.jpeg" class="img-fluid img2" />
+                            <img src="image/about3.jpeg" class="img-fluid img3" />
+                            <img src="image/about4.jpeg" class="img-fluid img4" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="productSection" id="products">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 col-lg-12">
+                    <div class="headerSection">
+                        <h3>Products</h3>
+                        <span>See All <i class="fa-solid fa-arrow-right-long"></i></span>
+                    </div>
+                    <div class="tabSection pt-5">
+                        <ul class="nav nav-tabs">
+                            <li class="active"><a data-toggle="tab" href="#all">All</a></li>
+                            <li><a data-toggle="tab" href="#bed">Bed</a></li>
+                            <li><a data-toggle="tab" href="#sofa">Sofa</a></li>
+                            <li><a data-toggle="tab" href="#chair">Chair</a></li>
+                            <li><a data-toggle="tab" href="#light">Light</a></li>
+                        </ul>
+                        
+                        <div class="tab-content pt-5 mt-4">
+                            <div id="all" class="tab-pane fade in active show">
+                              <div class="row">
+                                <div class="col-lg-4 col-md-6 col-sm-12">
+                                    <div class="productDiv">
+                                        <div class="productBox">
+                                            <span><i class="fa-solid fa-cart-shopping"></i></span>
+                                            <h5>Hand Base Lamp</h5>
+                                            <p>$35.00 <span>$55.00</span></p>
+                                        </div>
+                                        <img src="image/product1.png" class="img-fluid" style="width: 38%; left: 33%;" />
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-6 col-sm-12">
+                                    <div class="productDiv">
+                                        <div class="productBox">
+                                            <span><i class="fa-solid fa-cart-shopping"></i></span>
+                                            <h5>Vintage Chair</h5>
+                                            <p>$65.00 <span>$95.00</span></p>
+                                        </div>
+                                        <img src="image/product2.png" class="img-fluid" style="left: 24%;width: 55%;"/>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-6 col-sm-12">
+                                    <div class="productDiv">
+                                        <div class="productBox">
+                                            <span><i class="fa-solid fa-cart-shopping"></i></span>
+                                            <h5>Lamp Tool</h5>
+                                            <p>$35.00 <span>$45.00</span></p>
+                                        </div>
+                                        <img src="image/product3.png" class="img-fluid" style="left: 25%;width: 50%;"/>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-6 col-sm-12">
+                                    <div class="productDiv">
+                                        <div class="productBox">
+                                            <span><i class="fa-solid fa-cart-shopping"></i></span>
+                                            <h5>Stylish Chair</h5>
+                                            <p>$45.00 <span>$65.00</span></p>
+                                        </div>
+                                        <img src="image/product4.png" class="img-fluid" style="left: 20%;width: 58%;" />
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-6 col-sm-12">
+                                    <div class="productDiv">
+                                        <div class="productBox">
+                                            <span><i class="fa-solid fa-cart-shopping"></i></span>
+                                            <h5>Vintage Chair</h5>
+                                            <p>$65.00 <span>$95.00</span></p>
+                                        </div>
+                                        <img src="image/product5.png" class="img-fluid" style="left: 29%;width: 43%;" />
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-6 col-sm-12">
+                                    <div class="productDiv">
+                                        <div class="productBox">
+                                            <span><i class="fa-solid fa-cart-shopping"></i></span>
+                                            <h5>Stokable Chair</h5>
+                                            <p>$35.00 <span>$85.00</span></p>
+                                        </div>
+                                        <img src="image/product6.png" class="img-fluid" style="left: 20%;width: 58%;" />
+                                    </div>
+                                </div>
+                              </div>
+                            </div>
+
+                            <div id="bed" class="tab-pane fade">
+                                <div class="row">
+                                    <div class="col-lg-4 col-md-6 col-sm-12">
+                                        <div class="productDiv">
+                                            <div class="productBox">
+                                                <span><i class="fa-solid fa-cart-shopping"></i></span>
+                                                <h5>Stylish Chair</h5>
+                                                <p>$45.00 <span>$65.00</span></p>
+                                            </div>
+                                            <img src="image/product4.png" class="img-fluid" style="left: 20%;width: 58%;" />
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 col-md-6 col-sm-12">
+                                        <div class="productDiv">
+                                            <div class="productBox">
+                                                <span><i class="fa-solid fa-cart-shopping"></i></span>
+                                                <h5>Vintage Chair</h5>
+                                                <p>$65.00 <span>$95.00</span></p>
+                                            </div>
+                                            <img src="image/product5.png" class="img-fluid" style="left: 29%;width: 43%;" />
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 col-md-6 col-sm-12">
+                                        <div class="productDiv">
+                                            <div class="productBox">
+                                                <span><i class="fa-solid fa-cart-shopping"></i></span>
+                                                <h5>Stokable Chair</h5>
+                                                <p>$35.00 <span>$85.00</span></p>
+                                            </div>
+                                            <img src="image/product6.png" class="img-fluid" style="left: 20%;width: 58%;" />
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 col-md-6 col-sm-12">
+                                        <div class="productDiv">
+                                            <div class="productBox">
+                                                <span><i class="fa-solid fa-cart-shopping"></i></span>
+                                                <h5>Hand Base Lamp</h5>
+                                                <p>$35.00 <span>$55.00</span></p>
+                                            </div>
+                                            <img src="image/product1.png" class="img-fluid" style="width: 38%; left: 33%;" />
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 col-md-6 col-sm-12">
+                                        <div class="productDiv">
+                                            <div class="productBox">
+                                                <span><i class="fa-solid fa-cart-shopping"></i></span>
+                                                <h5>Vintage Chair</h5>
+                                                <p>$65.00 <span>$95.00</span></p>
+                                            </div>
+                                            <img src="image/product2.png" class="img-fluid" style="left: 24%;width: 55%;"/>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 col-md-6 col-sm-12">
+                                        <div class="productDiv">
+                                            <div class="productBox">
+                                                <span><i class="fa-solid fa-cart-shopping"></i></span>
+                                                <h5>Lamp Tool</h5>
+                                                <p>$35.00 <span>$45.00</span></p>
+                                            </div>
+                                            <img src="image/product3.png" class="img-fluid" style="left: 25%;width: 50%;"/>
+                                        </div>
+                                    </div> 
+                                </div>
+                            </div>
+
+                            <div id="sofa" class="tab-pane fade">
+                                <div class="row">
+                                    <div class="col-lg-4 col-md-6 col-sm-12">
+                                        <div class="productDiv">
+                                            <div class="productBox">
+                                                <span><i class="fa-solid fa-cart-shopping"></i></span>
+                                                <h5>Stokable Chair</h5>
+                                                <p>$35.00 <span>$85.00</span></p>
+                                            </div>
+                                            <img src="image/product6.png" class="img-fluid" style="left: 20%;width: 58%;" />
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 col-md-6 col-sm-12">
+                                        <div class="productDiv">
+                                            <div class="productBox">
+                                                <span><i class="fa-solid fa-cart-shopping"></i></span>
+                                                <h5>Hand Base Lamp</h5>
+                                                <p>$35.00 <span>$55.00</span></p>
+                                            </div>
+                                            <img src="image/product1.png" class="img-fluid" style="width: 38%; left: 33%;" />
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 col-md-6 col-sm-12">
+                                        <div class="productDiv">
+                                            <div class="productBox">
+                                                <span><i class="fa-solid fa-cart-shopping"></i></span>
+                                                <h5>Stylish Chair</h5>
+                                                <p>$45.00 <span>$65.00</span></p>
+                                            </div>
+                                            <img src="image/product4.png" class="img-fluid" style="left: 20%;width: 58%;" />
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 col-md-6 col-sm-12">
+                                        <div class="productDiv">
+                                            <div class="productBox">
+                                                <span><i class="fa-solid fa-cart-shopping"></i></span>
+                                                <h5>Vintage Chair</h5>
+                                                <p>$65.00 <span>$95.00</span></p>
+                                            </div>
+                                            <img src="image/product5.png" class="img-fluid" style="left: 29%;width: 43%;" />
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 col-md-6 col-sm-12">
+                                        <div class="productDiv">
+                                            <div class="productBox">
+                                                <span><i class="fa-solid fa-cart-shopping"></i></span>
+                                                <h5>Vintage Chair</h5>
+                                                <p>$65.00 <span>$95.00</span></p>
+                                            </div>
+                                            <img src="image/product2.png" class="img-fluid" style="left: 24%;width: 55%;"/>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 col-md-6 col-sm-12">
+                                        <div class="productDiv">
+                                            <div class="productBox">
+                                                <span><i class="fa-solid fa-cart-shopping"></i></span>
+                                                <h5>Lamp Tool</h5>
+                                                <p>$35.00 <span>$45.00</span></p>
+                                            </div>
+                                            <img src="image/product3.png" class="img-fluid" style="left: 25%;width: 50%;"/>
+                                        </div>
+                                    </div> 
+                                </div>
+                            </div>
+
+                            <div id="chair" class="tab-pane fade">
+                                <div class="row">
+                                    <div class="col-lg-4 col-md-6 col-sm-12">
+                                        <div class="productDiv">
+                                            <div class="productBox">
+                                                <span><i class="fa-solid fa-cart-shopping"></i></span>
+                                                <h5>Hand Base Lamp</h5>
+                                                <p>$35.00 <span>$55.00</span></p>
+                                            </div>
+                                            <img src="image/product1.png" class="img-fluid" style="width: 38%; left: 33%;" />
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 col-md-6 col-sm-12">
+                                        <div class="productDiv">
+                                            <div class="productBox">
+                                                <span><i class="fa-solid fa-cart-shopping"></i></span>
+                                                <h5>Vintage Chair</h5>
+                                                <p>$65.00 <span>$95.00</span></p>
+                                            </div>
+                                            <img src="image/product2.png" class="img-fluid" style="left: 24%;width: 55%;"/>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 col-md-6 col-sm-12">
+                                        <div class="productDiv">
+                                            <div class="productBox">
+                                                <span><i class="fa-solid fa-cart-shopping"></i></span>
+                                                <h5>Stylish Chair</h5>
+                                                <p>$45.00 <span>$65.00</span></p>
+                                            </div>
+                                            <img src="image/product4.png" class="img-fluid" style="left: 20%;width: 58%;" />
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 col-md-6 col-sm-12">
+                                        <div class="productDiv">
+                                            <div class="productBox">
+                                                <span><i class="fa-solid fa-cart-shopping"></i></span>
+                                                <h5>Vintage Chair</h5>
+                                                <p>$65.00 <span>$95.00</span></p>
+                                            </div>
+                                            <img src="image/product5.png" class="img-fluid" style="left: 29%;width: 43%;" />
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 col-md-6 col-sm-12">
+                                        <div class="productDiv">
+                                            <div class="productBox">
+                                                <span><i class="fa-solid fa-cart-shopping"></i></span>
+                                                <h5>Stokable Chair</h5>
+                                                <p>$35.00 <span>$85.00</span></p>
+                                            </div>
+                                            <img src="image/product6.png" class="img-fluid" style="left: 20%;width: 58%;" />
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 col-md-6 col-sm-12">
+                                        <div class="productDiv">
+                                            <div class="productBox">
+                                                <span><i class="fa-solid fa-cart-shopping"></i></span>
+                                                <h5>Lamp Tool</h5>
+                                                <p>$35.00 <span>$45.00</span></p>
+                                            </div>
+                                            <img src="image/product3.png" class="img-fluid" style="left: 25%;width: 50%;"/>
+                                        </div>
+                                    </div> 
+                                </div>
+                            </div>
+
+                            <div id="light" class="tab-pane fade">
+                                <div class="row">
+                                    <div class="col-lg-4 col-md-6 col-sm-12">
+                                        <div class="productDiv">
+                                            <div class="productBox">
+                                                <span><i class="fa-solid fa-cart-shopping"></i></span>
+                                                <h5>Stylish Chair</h5>
+                                                <p>$45.00 <span>$65.00</span></p>
+                                            </div>
+                                            <img src="image/product4.png" class="img-fluid" style="left: 20%;width: 58%;" />
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 col-md-6 col-sm-12">
+                                        <div class="productDiv">
+                                            <div class="productBox">
+                                                <span><i class="fa-solid fa-cart-shopping"></i></span>
+                                                <h5>Vintage Chair</h5>
+                                                <p>$65.00 <span>$95.00</span></p>
+                                            </div>
+                                            <img src="image/product5.png" class="img-fluid" style="left: 29%;width: 43%;" />
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 col-md-6 col-sm-12">
+                                        <div class="productDiv">
+                                            <div class="productBox">
+                                                <span><i class="fa-solid fa-cart-shopping"></i></span>
+                                                <h5>Stokable Chair</h5>
+                                                <p>$35.00 <span>$85.00</span></p>
+                                            </div>
+                                            <img src="image/product6.png" class="img-fluid" style="left: 20%;width: 58%;" />
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 col-md-6 col-sm-12">
+                                        <div class="productDiv">
+                                            <div class="productBox">
+                                                <span><i class="fa-solid fa-cart-shopping"></i></span>
+                                                <h5>Hand Base Lamp</h5>
+                                                <p>$35.00 <span>$55.00</span></p>
+                                            </div>
+                                            <img src="image/product1.png" class="img-fluid" style="width: 38%; left: 33%;" />
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 col-md-6 col-sm-12">
+                                        <div class="productDiv">
+                                            <div class="productBox">
+                                                <span><i class="fa-solid fa-cart-shopping"></i></span>
+                                                <h5>Vintage Chair</h5>
+                                                <p>$65.00 <span>$95.00</span></p>
+                                            </div>
+                                            <img src="image/product2.png" class="img-fluid" style="left: 24%;width: 55%;"/>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 col-md-6 col-sm-12">
+                                        <div class="productDiv">
+                                            <div class="productBox">
+                                                <span><i class="fa-solid fa-cart-shopping"></i></span>
+                                                <h5>Lamp Tool</h5>
+                                                <p>$35.00 <span>$45.00</span></p>
+                                            </div>
+                                            <img src="image/product3.png" class="img-fluid" style="left: 25%;width: 50%;"/>
+                                        </div>
+                                    </div> 
+                                </div>
+                            </div>
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="feedbackSection" id="feedback">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-12 col-lg-12">
+                    <div class="topDiv">
+                        <h3>What our happy <br>client say</h3>
+                        <p>File storage made easy – including powerful features <br>you won’t find anywhere else. Whether you’re.</p>
+                        <img src="image/file.png" class="img-fluid file" />
+                    </div>
+                    <div class="bottomDIv pt-5">
+                        <div class="leftBox px-lg-5 px-2">
+                            <div class="ImgSlideBox" id="ImgSlideBox">
+                                <div class="imgSlide">
+                                    <img src="image/feedbackImg.jpeg" class="img-fluid" />
+                                </div>
+                                <div class="imgSlide">
+                                    <img src="image/feedbackImg2.jpeg" class="img-fluid" />
+                                </div>
+                            </div>
+                            <img src="image/star.png" class="img-fluid star" />
+                        </div>
+                        <div class="rightBox">
+                            <h6>furni.shop</h6>
+                            <div class="sliderBox" id="sliderBox">
+                                <div class="slide">
+                                    <p class="newStylepara">File storage made easy – including powerful features you won’t find anywhere else. Whether you’re.</p>
+                                    <h6 class="pb-0">Nirmal Rout</h6>
+                                    <p class="designation">Frontend Developer</p>
+                                </div>
+                                <div class="slide">
+                                    <p class="newStylepara">Furniture should always be comfortable. And always have a piece of art that you made somewhere in the home..</p>
+                                    <h6 class="pb-0">Santosh</h6>
+                                    <p class="designation">Backend Developer</p>
+                                </div>
+                            </div>
+                            <div class="btnDiv">
+                                <a class="prev changeBtn" onclick="prevslide()">❮</a>
+                                <a class="prev changeBtn ml-4" onclick="nextslide()">❯</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="halfCircle">
+                        <div class="innerback"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="innerCircle"></div>
+        <div class="outerCircle"></div>
+    </section>
+
+    <footer class="footerSection">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="row top">
+                        <div class="col-md-7 col-sm-12 col-lg-7 d-flex align-items-center">
+                            <h3>Start your business today<br> for $0+ state fees.</h3>
+                        </div>
+                        <div class="col-md-5 col-sm-12 col-lg-5 d-flex align-items-center justify-content-evenly">
+                            <button type ="button" class="btn filled">Get Started</button>
+                            <button type ="button" class="btn unfilled">Contact Sales</button>
+                        </div>
+                    </div>
+                    <div class="line"></div>
+                    <div class="row bottom">
+                        <div class="col-md-12 col-lg-3 col-sm-12 left pr-md-4">
+                            <h5>furni.shop</h5>
+                            <p>Optix seamlessly connects your members with the community, resources.</p>
+                            <div class="iconDiv">
+                                <i class="fa-brands fa-facebook-f"></i>
+                                <i class="fa-brands fa-twitter"></i>
+                                <i class="fa-brands fa-linkedin-in"></i>
+                                <i class="fa-brands fa-pinterest"></i>
+                            </div>
+                        </div>
+                        <div class="col-md-12 col-lg-9 col-sm-12 right mt-lg-0 mt-5">
+                            <div class="row">
+                                <div class="col-md-3 col-lg-3 col-sm-6">
+                                    <h6>Entity Type</h6>
+                                    <p>Knowledge base</p>
+                                    <p>Security</p>
+                                    <p>Privacy Policy</p>
+                                    <p>About Us</p>
+                                    <p>Partners</p>
+                                    <p>FAQs</p>
+                                </div>
+                                <div class="col-md-3 col-lg-3 col-sm-6">
+                                    <h6>Entity Type</h6>
+                                    <p>Knowledge base</p>
+                                    <p>Security</p>
+                                    <p>Privacy Policy</p>
+                                    <p>About Us</p>
+                                    <p>Partners</p>
+                                    <p>FAQs</p>
+                                </div>
+                                <div class="col-md-3 col-lg-3 col-sm-6">
+                                    <h6>Entity Type</h6>
+                                    <p>Knowledge base</p>
+                                    <p>Security</p>
+                                    <p>Privacy Policy</p>
+                                    <p>About Us</p>
+                                    <p>Partners</p>
+                                    <p>FAQs</p>
+                                </div>
+                                <div class="col-md-3 col-lg-3 col-sm-6">
+                                    <h6>Entity Type</h6>
+                                    <p>Knowledge base</p>
+                                    <p>Security</p>
+                                    <p>Privacy Policy</p>
+                                    <p>About Us</p>
+                                    <p>Partners</p>
+                                    <p>FAQs</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="./myslider.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script>
+        var header = document.getElementById("Header");
+        window.addEventListener("scroll", function(event) {
+            var top = this.scrollY;
+            if(top > 10){
+                header.classList.add("bottomBorder");
+            }
+            else{
+                if(header.classList.contains("bottomBorder")){
+                    header.classList.remove("bottomBorder");
+                }
+            }
+        });
+
+        var iconDiv = document.getElementById("iconDiv");
+        var nav = document.getElementById("navList");
+        iconDiv.addEventListener("click", toggle);
+         function toggle(){
+            nav.classList.toggle("close");
+            iconDiv.classList.toggle("cross");
+            document.body.classList.toggle('lock-scroll');
+         }
+        function scrollBottom(){
+            
+            window.scrollTo({ left: 0, top: document.body.scrollHeight, behavior: "smooth" });
+        }
+
+
+        var currentslide = 0;
+        showSlide(currentslide);
+        
+        function prevslide(){
+            if(currentslide !== 0){
+                currentslide = currentslide - 1;
+                showSlide(currentslide)
+            }
+        }
+        function nextslide(){
+            let parent = document.getElementById("sliderBox");
+            let slidess = parent.querySelectorAll(".slide");
+            if(currentslide < slidess.length-1){
+                currentslide = currentslide + 1;
+                showSlide(currentslide)
+            }
+        }
+        function showSlide(a){
+            let parent = document.getElementById("sliderBox");
+            let slides = parent.querySelectorAll(".slide");
+
+            let parentimg = document.getElementById("ImgSlideBox");
+            let slidesimg = parentimg.querySelectorAll(".imgSlide");
+
+            // for(let s=0; s<slides.length; s++){
+            //     slides[s].style.display = "none";
+            // }
+            // slides[a].style.display = "block";
+
+            if(a>=0 && a<slides.length){
+	            // let slides = document.getElementsByClassName("box");
+	    
+	    
+	        for (let slide = 0; slide<slides.length; slide++) {
+	            if(slide < a){
+	                let l = "-"+(a-slide)*450+"px";
+	                slides[slide].style.left = l;
+                    let t = "-"+(a-slide)*415+"px";
+	                slidesimg[slide].style.top = l;
+	            }
+	            else if(slide > a){
+	                let r = ""+(slide-a)*450+"px";
+	                slides[slide].style.left = r;
+                    let b = ""+(slide-a)*415+"px";
+	                slidesimg[slide].style.top = b;
+	            }
+	            else{
+	                slides[slide].style.left = "0px";
+                    slidesimg[slide].style.top = "0px";
+	            }
+	        } 
+	    }
+        }
+
+
+//create a new instance of shake.js.
+    var myShakeEvent = new Shake({
+	    threshold: 15
+	});
+	// start listening to device motion
+	myShakeEvent.start();
+	// register a shake event
+	window.addEventListener('shake', shakeEventDidOccur, false);
+	//shake event callback
+	
+	function shakeEventDidOccur () {
+	    
+		changeLanguage();
+	}
+	
+	    function changeLanguage(){
+            var sourceLang = 'en';
+            
+            const languages = ['en', 'hi', 'kn', 'te', 'ta', 'mr', 'pa', 'bn', 'gu'];
+            const randomIndex = Math.floor(Math.random() * languages.length); 
+            const targetLang = languages[randomIndex];
+            console.log(targetLang);
+		  $.ajax({
+			    url: "https://translation.googleapis.com/language/translate/v2",
+			    type: "POST",
+			    data: {
+			      q: $("body").html(),
+			      target: targetLang,
+			      key: "AIzaSyBe1evkMoKdm7MdIBWa-qcy4OS4JkWmDUs"
+			    },
+			    success: function(response) {
+			      $("body").html(response.data.translations[0].translatedText);
+			      //currentIndex = (currentIndex + 1) % languages.length; // increment currentIndex after accessing the array element
+			    }
+			  });
+		  
+		  
+		  
+
+		}
+
+    </script>
+  </body>
+</html>
+
