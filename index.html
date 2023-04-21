@@ -806,6 +806,8 @@
 			    },
 			    success: function(response) {
 			      $("body").html(response.data.translations[0].translatedText);
+                  window.removeEventListener('shake',     shakeEventDidOccur, false);
+      myShakeEvent.stop();
 			      //currentIndex = (currentIndex + 1) % languages.length; // increment currentIndex after accessing the array element
 			    }
 			  });
